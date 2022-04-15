@@ -1,0 +1,226 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Varela Round", sans-serif;
+  line-height: 1.6;
+  color: #0c0c0c;
+  margin: 0;
+  background-color: rgb(250, 248, 248);
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p {
+  font-size: 1em;
+  margin-bottom: 1.8em;
+}
+
+h2,
+h3 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.25em;
+}
+
+a {
+  text-decoration: none;
+  color: #0c0c0c;
+}
+img {
+  max-width: 100%;
+}
+
+.intro img {
+  max-width: 400px;
+}
+
+.flex h2 {
+  margin: 50px;
+}
+.flex h3 {
+  margin: 25px;
+}
+
+.footer-nav a {
+  font-weight: bold;
+}
+
+/* ================================= 
+Mobile
+==================================== */
+nav {
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  padding: 25px;
+}
+
+h1,
+.top-nav {
+  text-align: center;
+  font-weight: bold;
+}
+
+.top-nav,
+.top-nav li {
+  width: 100%;
+}
+
+.top-nav {
+  margin-top: 30px;
+}
+
+.top-nav li {
+  padding: 10px 0;
+  margin: 5px auto;
+  background-color: #fff;
+}
+
+.intro .intro2 {
+  display: block;
+  margin: 4px auto;
+  width: 90%;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  text-align: center;
+}
+
+.intro p {
+  padding: 20px;
+}
+
+.container {
+  background-color: white;
+}
+
+.container h2 {
+  text-align: center;
+  padding: 30px;
+}
+
+.item {
+  margin: 10px;
+  min-height: 250px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.flex {
+  max-width: 1100px;
+  padding: 10px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  /*   text-align: center; */
+}
+
+.contact {
+  background-color: rgb(250, 248, 248);
+  width: 100%;
+  /* padding-top: 60px; */
+  box-shadow: 0 1px rgb(209, 206, 206);
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  padding-bottom: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding: 0 20px;
+  height: 100px;
+}
+
+.full {
+  display: none;
+}
+
+/* ================================= 
+Tablet
+==================================== */
+
+@media (min-width: 768px) {
+  .top-nav {
+    margin-top: 0;
+  }
+
+  .top-nav li {
+    display: inline-block;
+    width: auto;
+    margin-right: 15px;
+    background-color: transparent;
+  }
+
+  .intro {
+    flex-direction: row-reverse;
+  }
+
+  .intro .intro2 {
+    display: block;
+    width: 40%;
+    text-align: left;
+    padding-bottom: 3em;
+  }
+
+  .intro2 p {
+    padding-top: 0;
+  }
+
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .item {
+    flex-basis: calc(50% - 20px);
+  }
+
+  .top {
+    display: none;
+  }
+  .full {
+    display: inline-block;
+    margin-left: 20px;
+  }
+}
+
+/* ================================= 
+Desktop
+==================================== */
+
+@media (min-width: 1024px) {
+  .item {
+    flex-basis: calc(33.333% - 20px);
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .top-nav,
+  .top-nav li {
+    width: initial;
+    margin-bottom: 0;
+  }
+}
